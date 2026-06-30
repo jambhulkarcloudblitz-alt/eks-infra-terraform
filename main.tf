@@ -5,7 +5,7 @@ provider "aws" {
 
 
 resource "aws_iam_role" "eks_cluster_role" {
-  name = "eks-cluster-role-cdec-b3"
+  name = "eks-cluster-role-cdec-b4"
   assume_role_policy = jsonencode({
     "Version": "2012-10-17",
     "Statement": [
@@ -62,7 +62,7 @@ resource "aws_eks_cluster" "my_eks" {
 }
 
 resource "aws_iam_role" "node_role" {
-  name = "node-role-3"
+  name = "node-role-4"
   assume_role_policy = jsonencode({
     "Version": "2012-10-17",
     "Statement": [
